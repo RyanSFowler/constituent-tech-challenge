@@ -19,11 +19,11 @@ function saveData() {
 // Initial load
 loadData();
 
-export function listConstituents() {
+export const listConstituents = () => {
   return Object.values(constituents);
 }
 
-export function upsertConstituent(input: Partial<Constituent>) {
+export const upsertConstituent = (input: Partial<Constituent>) => {
   const { email, name, address } = input;
   const existing = constituents[email!];
 
@@ -39,7 +39,7 @@ export function upsertConstituent(input: Partial<Constituent>) {
   return merged;
 }
 
-export function exportConstituentsCsv(from?: string, to?: string) {
+export const exportConstituentsCsv = (from?: string, to?: string) => {
   const fromTime = from ? new Date(from).getTime() : 0;
   const toTime = to ? new Date(to).getTime() : Date.now();
 
