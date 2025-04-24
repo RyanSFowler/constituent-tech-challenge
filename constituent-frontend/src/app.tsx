@@ -150,7 +150,7 @@ const App = () => {
         />
       )}
       {isExportModalOpen && (
-        <ExportCSV closeModal={() => setIsExportModalOpen(false)} />
+        <ExportCSV isOpen={isExportModalOpen} closeModal={() => setIsExportModalOpen(false)} />
       )}
       <div className="flex-1 overflow-y-auto px-4 pb-4">
         <ConstituentList constituents={filteredConstituents} />

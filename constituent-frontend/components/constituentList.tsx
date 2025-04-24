@@ -1,4 +1,4 @@
-import { Card, CardContent } from './Card';
+import { Card, CardContent } from './card';
 import React from 'react';
 
 interface Constituent {
