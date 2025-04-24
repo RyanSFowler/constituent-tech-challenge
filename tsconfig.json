@@ -1,0 +1,8 @@
+{
+    "files": [],
+    "references": [
+        { "path": "./constituent-backend" },
+        { "path": "./constituent-frontend" }
+    ]
+}
+  
