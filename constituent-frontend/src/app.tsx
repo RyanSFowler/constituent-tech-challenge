@@ -1,6 +1,6 @@
-import { AddConstituentModal } from '../components/AddConstituentModal';
+import { AddConstituentModal } from '../components/addConstituentModal';
 import { ConstituentList } from '../components/ConstituentList';
-import { SearchFilterSortBar } from '../components/SearchFilterSortBar';
+import { SearchFilterSortBar } from '../components/searchFilterSortBar';
 import { Button } from '../components/button';
 import { ExportCSV } from '../components/exportCSV';
 import { API_URL } from './config';
@@ -13,7 +13,7 @@ interface Constituent {
   signupTime: string;
 }
 
-export default function App() {
+const App = () => {
   const [constituents, setConstituents] = useState<Constituent[]>([]);
   const [filteredConstituents, setFilteredConstituents] = useState<
     Constituent[]
@@ -158,3 +158,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

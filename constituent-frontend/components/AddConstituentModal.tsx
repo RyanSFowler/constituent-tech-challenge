@@ -1,4 +1,4 @@
-import { Input } from './Input';
+import { Input } from './input';
 import { Button } from './button';
 import React from 'react';
 
